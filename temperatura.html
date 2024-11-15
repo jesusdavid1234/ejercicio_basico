@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indice de temperatura</title>
+    <title>temperatura_permitida</title>
 </head>
 <body>
     <script>
        
-        
-        console.log("Bienvenido Usuario");
+        console.log("Bienvenido Usuario")
 
         var temperatura;
 
-        do{
-            temperatura = parseFloat(prompt("La temperatura actual °C"));
-            if (temperatura <18 || temperatura > 25) {
-                alert("¡¡Peligro: Temperatura fuera del rango aceptable.");
-            }
-        }while (temperatura <18 || temperatura > 25)
-        alert("temperatura dento del rango: "+temperatura +" °C");
-
-        console.log("temperatura fuera de rango: "+temperatura+" °C");
+        temperatura = parseFloat(prompt("digite la temperatura actual"))
+        if (temperatura >= 18 && temperatura <= 25) {
+            console.log("la temperatura esta dentro del rango: " + temperatura)
+            alert("la temperatura esta dentro del rango : " + temperatura)
+        } else {
+            console.log("la temperatura registrada no es válida")
+            alert("la temperatura registrada no es válida")
+        }
     </script>
 </body>
 </html>
