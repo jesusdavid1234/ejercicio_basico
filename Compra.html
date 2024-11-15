@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista_de_vetas_producto</title>
+</head>
+<body>
+    <script>
+        
+        console.log("tiena de jesus calvo")
+        var Respuesta = confirm("vas a realizar una compra");
+        if (Respuesta){
+            var cantidadCompra= parseInt(prompt("cuantos productos quiere comprar"))
+            while (isNaN(cantidadCompra) || cantidadCompra <= 0) {
+                alert("ingrese valores validos.");
+            };
+            var totalVentas = 0;
+            var productos = ""
+            for (var i =0; i<cantidadCompra; i++) {
+                var nombre_Producto = prompt(" nombre del producto:");
+                var precio_Producto = parseFloat(prompt(" precio del producto:"));
+                var cantidad_vendida = parseInt(prompt("cantidad vendida del producto:"))
+                while (isNaN(precioProducto) || isNaN(cantidad_vendida) ||  precio_Producto <= 0 || cantidad_vendida <= 0) {
+                    alert("Por favor, ingrese valores válidos.");
+                    var  precio_Producto = parseFloat(prompt("(Por favor, ingrese valores válidos).\nIngrese el precio del producto:"));
+                    var cantidad_vendida = parseInt(prompt("Ingrese la cantidad vendida del producto:"))
+
+                }
+                productos += nombre_Producto+ ", ";
+                var total_Producto = precio_Producto * ccantidad_vendida;
+                tota_lVentas += total_Producto;
+            };
+                console.log("Productos Vendidos: " + productos);
+                console.log("Total de la Compra: $" + total_Ventas);
+                console.log("hasta luego")
+        }else{
+            console.log("bye");
+        }
+    </script>
+</body>
+</html>
