@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>peso_permitido</title>
+</head>
+<body>
+    <script>
+       
+        console.log("Bienvenido Usuario");
+        var peso;
+
+        peso = parseInt(prompt("dijite el peso"));
+        if (isNaN(peso) || peso > 320 || peso <= 0){
+            console.log("el peso ingresado es invalido");
+            alert("el peso ingresado es invalido")
+        }else{
+            console.log("l peso ingresado es válido");
+            alert("el peso ingresado es válido");
+            var piso = parseInt(prompt("digite el piso al que desee ir (1-10)"))
+            if (piso >= 1 && piso <= 10) {
+                console.log("el ascensor se mueve al piso " + piso)
+                alert("el ascensor se mueve al piso " + piso)
+            } else {
+                console.log("el piso ingresado no es válido")
+                alert("el piso ingresado no es válido")
+            }
+        }
+    </script>
+</body>
+</html>
