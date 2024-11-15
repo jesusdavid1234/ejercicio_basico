@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>numero_pares_inpares</title>
+</head>
+<body>
+    <script>
+      
+        
+        console.log("Bienvenido Usuario");
+
+        var disponible = 100000;
+        var retirar = parseInt(prompt("monto que desea retirar:"));
+
+        while (isNaN(retirar) || retirar <= 0) {
+            alert("monto no valido.");
+            retirar = parseInt(prompt("monto que desea retirar:"));
+        }
+        while (retirar > disponible) {
+            alert("lo siento el monto es mayor al saldo .");
+            retirar = parseInt(prompt("monto que desea retirar:"));
+        }
+
+        disponible -= retirar;
+        alert("Saldo restante: $" + disponible);
+        console.log("Saldo restante: $" + disponible);
+    </script>
+</body>
+</html>
