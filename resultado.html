@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados Examen</title>
+</head>
+<body>
+    <script>
+       
+        
+        console.log("Bienvenido Usuario");
+
+        var nota;
+        var suma = 0;
+        var contador = 0;
+        var continuar = true;
+
+        do{
+            nota = parseFloat(prompt("nota del examen : "));
+            while (isNaN(nota) || nota < 0 || nota > 100) {
+                alert("numeros disponible mayores que cero");
+                nota = parseFloat(prompt("nota del examen"));
+            }
+            suma += nota;
+            contador++;
+            continuar = confirm("vas a ingresar mas resultados");
+        }while (continuar)
+
+        if (contador > 0) {
+            var promedio = suma / contador;
+
+        if (promedio >=70) {
+            alert("aprobaste tu promedio : "+ promedio.toFixed(2));
+            console.log("reprobaste tu promedio: "+ promedio.toFixed(2));
+        }else{
+            alert("Has reprobado tu promedio es: "+ promedio.toFixed(2));
+            console.log("Has reprobado tu promedio es: "+ promedio.toFixed(2));
+        }
+        } else {
+            alert("ingrese los resultados");
+            console.log("ingrese los resultados");
+        }
+    </script>
+</body>
+</html>
