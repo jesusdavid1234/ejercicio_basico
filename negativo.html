@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de números hasta ingresar negativo</title>
+</head>
+
+<body>
+    <script>
+
+        console.log("Bienvenido Usuario");
+
+        var suma = 0;
+
+        do {
+            var numero = parseFloat(prompt("ingresar numero positivo"));
+            if (numero >= 0) {
+                suma += numero;
+            }
+        } while (numero >= 0)
+        alert("Preceso Finalizado, número negativo ingresado");
+
+        alert("La suma de los números ingrrsados es: " + suma);
+
+        console.log("La suma de los números ingresados es: ", suma);
+    </script>
+</body>
+
+</html>
