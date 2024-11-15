@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promedio_de_numeros</title>
+</head>
+<body>
+    <script>  
+        console.log("Bienvenido usuario")
+        var inicial = parseInt(prompt(" número inicial del rango:"));
+        var fin = parseInt(prompt(" número final"));
+        while (isNaN(inicio) || isNaN(fin) || inicio > fin) {
+            console.log("solo ingrrsar valores validos.");
+            alert("(ingresar un rango)")
+            inicial = parseInt(prompt("número inicial del rango:"));
+            fin = parseInt(prompt("número final"));
+        }
+        var suma = 0;
+        var contador = 0;
+        for (var i = inicio; i <= fin; i++) {
+            console.log(i); 
+            suma += i;
+            contador++;
+        }
+        promedio = sumatoria / contador;
+        console.log("La sumatoria de los números del ", inicial, " al ", fin, " es: ", suma);
+        console.log("El promedio de los números del ", inicial, " al ", fin, " es: ", promedio);
+    </script>
+</body>
+</html>
