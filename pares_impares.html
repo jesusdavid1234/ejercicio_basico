@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de Números Pares e Impares</title>
+</head>
+<body>
+    <script>
+       
+        
+        console.log("Bienvenido Usuario");
+        var numero = parseInt(prompt("ingrese un número :"));
+        
+        while (isNaN(numero) || numero <= 0 ||!Number.isInteger(numero)) {
+            alert("ingrese un numero valido.");
+            numero = parseInt(prompt("ingrese un número :"));
+        }
+        var suma_pares = 0;
+        var suma_impares = 0;
+        
+        for (var i = 1; i <= numero; i++) {
+            console.log(i);
+            if (i % 2 === 0) {
+                suma_pares += i;
+            } else {
+                suma_impares += i;
+            }}
+        
+        console.log("La suma de los números pares es: " + suma_pares);
+        console.log("La suma de los números impares es: " + suma_impares);
+    </script>
+</body>
+</html>
